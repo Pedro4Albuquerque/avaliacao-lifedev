@@ -1,7 +1,79 @@
 .login {
-    text-align: center;
-  }
-   
-  .login p {
-    color: #aaa;
-  }
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login h1 {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.login p {
+  margin-bottom: 24px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login label{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.login input{
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1 px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2 ease;
+}
+
+.login input:focus{
+  border-color: #0077ff;
+}
+
+.btn{
+  padding: 10px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover{
+  background-color: #005fcc;
+}
+
+.btn-outline{
+  background-color: white;
+  color: #0077ff;
+  border: 2px solid #0077ff;
+}
+
+.btn-outline:hover{
+  background-color: #0077ff;
+  color: white;
+}
+
+.login p:last-of-type{
+  color: #666;
+  font-weight: 500;
+}

@@ -1,0 +1,59 @@
+.dashboard {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #222;
+}
+
+.postContainer {
+    background: f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.postContainer:hover {
+    box-shadow: 0 0 10px rgpa (0 ,0,0,0.08);
+}
+
+.postTitle{
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.postActions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postActions a{
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.postActions button{
+    background: none;
+    border: none;
+    color: #dc3546;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loading,
+.empty{
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 20px;
+}

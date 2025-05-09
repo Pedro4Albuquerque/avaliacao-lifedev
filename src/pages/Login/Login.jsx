@@ -8,7 +8,7 @@ const Login = () => {
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
 
-    const { login, error: authError, loading } = useAuthentication()
+    const { login, loginWithGoogle ,error: authError, loading } = useAuthentication()
 
     const handlerSubmit = async (e) => {
         e.preventDefault()
@@ -17,11 +17,12 @@ const Login = () => {
         const user = {
             email,
             password,
-        }
+        } 
+        await login(user)      
+    }
 
-        const res = await login(user)
-
-        console.log(res)
+    const handGoogleLogin = async () => {
+        await loginWithGoogle()
     }
 
     useEffect(() => {
@@ -60,7 +61,16 @@ const Login = () => {
                 </label>
                 {!loading && <button className='btn'>Entrar</button>}
                 {loading && <button className='btn' disabled>Aguarde... </button>}
+                
+                <button 
+                type="button"
+                onClick={handGoogleLogin}
+                className="btn btn-outline"
+                style={{marginTop: "10px"}}>
+                    Entrar com Google
+                </button>
                 {error && <p>{error}</p>}
+
             </form>
         </div>
     )
