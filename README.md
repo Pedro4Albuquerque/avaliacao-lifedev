@@ -88,6 +88,6 @@
 
 ## Autor 
 
-Autor: Pedro Henrique Albuquerque Souza 
+**Autor:** Pedro Henrique Albuquerque Souza 
 
-GitHub: Pedro4Albuquerque
+**GitHub:** Pedro4Albuquerque
