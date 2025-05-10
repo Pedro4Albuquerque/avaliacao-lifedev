@@ -11,6 +11,7 @@ const PostDetail =()=>{
             {post && (
                 <>
                 <h2 className={styles.title}>{post.title}</h2>
+                
                 <p className={styles.content}>{post.content}</p>
                 </>
             )}
