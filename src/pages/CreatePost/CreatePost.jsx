@@ -9,7 +9,6 @@ const CreatePost = () => {
     const [content, setContent] = useState("")
     const { insertDocument, response } = useInsertDocument("posts");
     const navigate = useNavigate();
-
     const { user } = useAuthValue();
 
     const handlesubmit = async (e) => {
